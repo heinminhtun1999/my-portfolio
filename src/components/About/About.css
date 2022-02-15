@@ -1,0 +1,12 @@
+.about {
+    height: 100vh;
+    display: flex;
+    flex-wrap: wrap;
+    position: relative;
+}
+
+@media (max-width: 1024px) {
+    .about {
+        height: auto;
+    }
+}

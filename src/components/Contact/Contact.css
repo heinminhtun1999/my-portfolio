@@ -1,0 +1,161 @@
+.contact {
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.contact-contents {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    align-content: center;
+    justify-content: flex-start;
+}
+
+.contact-me {
+    background: #1F005D;
+    width: 20%;
+    height: 100vh;
+    writing-mode: vertical-lr;
+    transform: rotate(180deg);
+    font-size: 2em;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.form-parent {
+    width: 50%;
+    height: auto;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-content: center;
+}
+
+.email-form {
+    height: 50%;
+    width: 500px;
+    display: flex;
+    flex-wrap: wrap;
+    align-content: center;
+    justify-content: flex-end;
+}
+
+.email-form div {
+    width: 100%;
+    margin: 15px 0;
+    display: flex;
+    justify-content: space-between;
+}
+
+.form-parent .get-in-touch {
+    align-items: center;
+    justify-content: flex-start;
+}
+
+.form-parent .get-in-touch hr {
+    margin-right: 10px;
+    height: 3px;
+    width: 40px;
+    background: #910bc5;
+    border: 0;
+}
+
+.email-form div label {
+    font-size: 20px;
+}
+
+.form-message label {
+    margin-left: 0;
+}
+
+.email-form div input {
+    background: transparent;
+    border: 0;
+    border-bottom: 3px solid #910bc5;
+    width: 75%;
+    color: #D9D9D9;
+    font-size: 18px;
+}
+
+.email-form div textarea{
+    width: 75%;
+    height: 150%;
+    resize: none;
+    overflow: auto;
+    scrollbar-width: width;
+    background: transparent;
+    border: 0;
+    border-bottom: 3px solid #910bc5;
+    color: #D9D9D9;
+    font-size: 18px;
+}
+
+.email-form .button {
+    margin-top: 40px;
+    padding: 15px 20px;
+}
+
+.contact-me-desc {
+    background: #1F005D;
+    width: 30%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-content: center;
+}
+
+.contact-me-desc h1, .contact-me-desc p {
+    width: 90%;
+    margin: 10px 0;
+    line-height: 1.5;
+}
+
+.contact-me-desc p:last-child {
+    display: flex;
+    justify-content: center;
+}
+
+@media (max-width: 1024px) {
+    .contact-me {
+        width: 100%;
+        height: 20%;
+        writing-mode: initial;
+        transform: rotate(0);
+    }
+    .contact-me-desc {
+        width: 100%;
+        height: auto;
+    }
+    .form-parent {
+        width: 100vw;
+        height: 65%;
+    }
+}
+
+@media (max-width: 600px) {
+    .contact-me {
+        font-size: 1.5em;
+    }
+    .email-form {
+        width: 350px;
+    }
+    .contact-me-desc h1{
+        font-size: 1.5em;
+    }
+    .email-form div input, .email-form div textarea {
+        width: 70%;
+    }
+}
+
+@media (max-height: 600px) {
+    .contact {
+        height: auto;
+    }
+    .contact-me, .form-parent {
+        padding: 30px 0;
+    }
+}

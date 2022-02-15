@@ -1,0 +1,36 @@
+@import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@500&display=swap');
+
+::-webkit-scrollbar {
+  display: none;
+}
+
+@-moz-document url-prefix() {
+  html,body{overflow: hidden !important;}
+}
+
+body, * {
+  margin: 0;
+  padding: 0;
+  font-family: 'Quicksand', sans-serif;
+  -webkit-font-smoothing: antialiased;
+}
+
+*:focus {
+  outline: none;
+}
+
+body {
+  background: #100F0F;
+  color: #D9D9D9;
+  scroll-behavior: smooth;
+}
+
+@media (max-width: 1024px) {
+  ::-webkit-scrollbar {
+    display: initial;
+  }
+  
+  @-moz-document url-prefix() {
+    html,body{overflow: scroll}
+  }
+}
